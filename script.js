@@ -14,12 +14,12 @@ const displayPhones= phones=>{
         // step-2 :: create a div
         const phoneCard =document.createElement('div');
         phoneCard.classList= `
-        card card-compact w-96 bg-gray-100 shadow-xl `;
+        card card-compact w-96 bg-fuchsia-50 shadow-xl `;
         // step-3 :: create innerHTML
         phoneCard.innerHTML=`
-        <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <figure><img src="${phone.image}" /></figure>
         <div class="card-body">
-          <h2 class="card-title">Shoes!</h2>
+          <h2 class="card-title">${phone.phone_name}</h2>
           <p>If a dog chews shoes whose shoes does he choose?</p>
           <div class="card-actions justify-end">
             <button class="btn btn-primary">Buy Now</button>
